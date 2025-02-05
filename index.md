@@ -1,6 +1,6 @@
 ## Kieron Harding - CV
 
-### [📄 Download PDF Version](https://github.com/KeyringHardhat/CV/raw/refs/heads/gh-pages/CV%20-%20Kieron%20Harding.pdf)
+### [📄 Download PDF Version](https://github.com/KeyringHardhat/CV/raw/refs/heads/gh-pages/Kieron%20Harding%20CV%202025.pdf)
 
 Senior DevOps Engineer with extensive experience in _Azure_, _Kubernetes_, _Elastic_, _Helm_, _Terraform_ and _CI/CD Pipelines_. Passionate about automation, security and optimising cloud infrastructure for high availability. Experienced in mentoring teams, collaborating with stakeholders and driving automation securely and efficiently. 
 
