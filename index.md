@@ -6,8 +6,7 @@ Senior DevOps Engineer with extensive experience in _Azure_, _Kubernetes_, _Elas
 
 ## Current Role
 
-#### Senior DevOps Engineer
-##### Matrix Security Watchdog
+### Senior DevOps Engineer - Matrix Security Watchdog
 #### MARCH 2024 ⏩ PRESENT
 - Infrastructure Leadership: Lead the design, implementation and cost optimisation of our Core Platform infrastructure, with high availability and security by design.
 - Automation & Security: Spearheaded improvements in our IaC (Infrastructure as Code) processes, Cloud Management and Posture as well as improvements to our Gitlab projects, focusing on scalability, automation and security enhancements.
@@ -16,15 +15,13 @@ Senior DevOps Engineer with extensive experience in _Azure_, _Kubernetes_, _Elas
 
 ## Previous Roles
 
-#### DevOps Engineer
-##### Matrix Security Watchdog
+### DevOps Engineer - Matrix Security Watchdog
 #### NOVEMBER 2020 ⏩ MARCH 2024
 - Driven infrastructure improvements using Terraform, Kubernetes, Azure and Gitlab to ensure and deliver a highly available and performant 24x7x365 system.
 - Optimised our CI/CD pipelines, reducing deployment times into Production by 65% and increasing efficiency during upgrades.
 - Enhanced security measures across our cloud infrastructure by implementing automated patching to reduce vulnerability lifetime windows by 90%. 
 
-#### Digital Solutions Consultant
-##### Security Watchdog
+### Digital Solutions Consultant - Security Watchdog
 #### FEBUARY 2019 ⏩ NOVEMBER 2020
 - Led the implementation of Azure Sentinel, still in Preview, strengthening our cloud security posture and achieving greater visibility across our estate.
 - Managed a telephony migration project, improving operational efficiency.
