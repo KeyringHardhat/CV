@@ -9,6 +9,7 @@ $line: #d9e1d9;
 $lime: #c8f04c;
 $teal: #0d6057;
 
+html { color-scheme: light; }
 * { box-sizing: border-box; }
 body { background: $paper; color: $ink; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
 .page-header { display: none; }
@@ -30,6 +31,7 @@ body { background: $paper; color: $ink; font-family: Inter, ui-sans-serif, syste
 .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid $line; }.skill-grid article { padding: 1.5rem 1.2rem 1.5rem 0; border-bottom: 1px solid $line; margin-right: 1.5rem; }.skill-grid h3 { font-size: 1rem; }.skill-grid p { margin: .4rem 0 0; color: $muted; font-size: .92rem; }.contact { padding: 5.5rem clamp(1.5rem, 6vw, 6rem); text-align: center; color: #f8faf4; background: $teal; border-radius: 24px; }.contact .eyebrow { color: $lime; }.contact h2 { font-size: clamp(2.3rem, 5vw, 4.5rem); letter-spacing: -.055em; line-height: 1; }.contact > a { display: inline-block; margin-top: 1.2rem; font-size: 1.3rem; color: $lime; font-weight: 750; }.contact__meta { margin: 4rem 0 0; color: #b4cbc4; font-size: .8rem; }
 @media (max-width: 720px) { .cv-shell { padding: .75rem; }.hero { grid-template-columns: 1fr; min-height: 0; padding: 3rem 1.7rem; }.hero__aside { margin-top: 1rem; }.section { padding: 4.5rem 1rem; }.section-heading,.role { grid-template-columns: 1fr; gap: .6rem; }.section-heading { margin-bottom: 2rem; }.role__title { display: block; }.role__title p { text-align: left; margin-top: .2rem; }.project-grid,.skill-grid { grid-template-columns: 1fr; }.skill-grid article { margin-right: 0; }.project-card { min-height: 240px; } }
 
+[data-theme="dark"] { color-scheme: dark; }
 [data-theme="dark"] body { background: #091613; color: #eef5ed; }
 [data-theme="dark"] .cv-shell { color: #eef5ed; }
 [data-theme="dark"] .section-heading .eyebrow, [data-theme="dark"] .role__period, [data-theme="dark"] .skill-grid p, [data-theme="dark"] .project-card p:not(.project-card__number), [data-theme="dark"] .project-card ul, [data-theme="dark"] .role li { color: #b9cbc2; }
@@ -38,3 +40,28 @@ body { background: $paper; color: $ink; font-family: Inter, ui-sans-serif, syste
 [data-theme="dark"] .projects { background: #102b25; }
 [data-theme="dark"] .project-card { background: #173a32; }
 [data-theme="dark"] .contact { background: #073f39; }
+[data-theme="dark"] .theme-toggle { border-color: #8faea4; }
+
+/* Follow the system setting before a visitor chooses a theme. */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) { color-scheme: dark; }
+  html:not([data-theme]) body { background: #091613; color: #eef5ed; }
+  html:not([data-theme]) .cv-shell { color: #eef5ed; }
+  html:not([data-theme]) .section-heading .eyebrow,
+  html:not([data-theme]) .role__period,
+  html:not([data-theme]) .skill-grid p,
+  html:not([data-theme]) .project-card p:not(.project-card__number),
+  html:not([data-theme]) .project-card ul,
+  html:not([data-theme]) .role li { color: #b9cbc2; }
+  html:not([data-theme]) .role li strong,
+  html:not([data-theme]) .role h3,
+  html:not([data-theme]) .section h2,
+  html:not([data-theme]) .skill-grid h3 { color: #eef5ed; }
+  html:not([data-theme]) .timeline,
+  html:not([data-theme]) .role,
+  html:not([data-theme]) .skill-grid,
+  html:not([data-theme]) .skill-grid article { border-color: #29433c; }
+  html:not([data-theme]) .projects { background: #102b25; }
+  html:not([data-theme]) .project-card { background: #173a32; }
+  html:not([data-theme]) .contact { background: #073f39; }
+}
