@@ -1,19 +1,31 @@
 ## Kieron Harding - CV
 
-### [📄 Download PDF Version](https://github.com/KeyringHardhat/CV/raw/refs/heads/gh-pages/Kieron%20Harding%20CV%202025.pdf)
-
-Senior DevOps Engineer with extensive experience in _Azure_, _Kubernetes_, _Elastic_, _Helm_, _Terraform_ and _CI/CD Pipelines_. Passionate about automation, security and optimising cloud infrastructure for high availability. Experienced in mentoring teams, collaborating with stakeholders and driving automation securely and efficiently. 
+Lead Platform Engineer with extensive experience in _Azure_, _Kubernetes_, _Elastic_, _Helm_, _Terraform_ and _CI/CD Pipelines_. Passionate about automation, security and optimising cloud infrastructure for high availability. Experienced in mentoring teams, collaborating with stakeholders and driving automation securely and efficiently. 
 
 ## Current Role
 
-### Senior DevOps Engineer - Matrix Security Watchdog
-#### MARCH 2024 ⏩ PRESENT
-- **Infrastructure Leadership**: Lead the design, implementation and cost optimisation of our Core Platform infrastructure, with high availability and security by design.
-- **Automation & Security**: Spearheaded improvements in our IaC (Infrastructure as Code) processes, Cloud Management and Posture as well as improvements to our Gitlab projects, focusing on scalability, automation and security enhancements.
-- **Mentorship & Collaboration**: Mentoring junior engineers in the department and collaborating with Technical Architects and key stakeholders to drive continuous improvement in CI/CD processes.
-- **Operational Excellence**: Overseeing our 24x7x365 service availability, ensuring seamless scaling and system robustness during standard operation as well as upgrades in Production. 
+### Lead Platform Engineer - Team Matrix
+#### JULY 2026 ⏩ PRESENT
+- **Platform Leadership**: Act as the primary infrastructure point of contact across a diverse estate of business-critical services, providing technical direction and operational support.  
+- **Cost Optimisation**: Lead cost-reduction initiatives across cloud and platform infrastructure, balancing efficiency with performance, resilience and scalability.  
+- **Infrastructure Simplification**: Partner with development teams to bring services in-house, simplify infrastructure and improve long-term maintainability.  
+**Security & Assurance**: Support Information Security activities from an infrastructure perspective, contributing to audits, penetration tests and remediation work.
 
 ## Previous Roles
+
+### Senoir Cloud Engineer - VFX Financial PLC
+#### JUNE 2025 ⏩ JULY 2026
+- Pipeline Modernisation: Improved CI/CD pipelines to increase deployment reliability, consistency and delivery speed across platform services.  
+- Infrastructure as Code Migration: Migrated infrastructure automation from PowerShell to Terraform, establishing more repeatable, scalable and maintainable provisioning practices.  
+- Cloud Cost Optimisation: Identified and delivered cost-reduction opportunities across cloud infrastructure while maintaining performance, resilience and security.  
+- Platform Improvement: Collaborated with engineering and operational teams to strengthen platform processes, automation and day-to-day service delivery.
+
+### Senior DevOps Engineer - Matrix Security Watchdog
+#### MARCH 2024 ⏩ JUNE 2025
+- Infrastructure Leadership: Lead the design, implementation and cost optimisation of our Core Platform infrastructure, with high availability and security by design.
+- Automation & Security: Spearheaded improvements in our IaC (Infrastructure as Code) processes, Cloud Management and Posture as well as improvements to our Gitlab projects, focusing on scalability, automation and security enhancements.
+- Mentorship & Collaboration: Mentoring junior engineers in the department and collaborating with Technical Architects and key stakeholders to drive continuous improvement in CI/CD processes.
+- Operational Excellence: Overseeing our 24x7x365 service availability, ensuring seamless scaling and system robustness during standard operation as well as upgrades in Production. 
 
 ### DevOps Engineer - Matrix Security Watchdog
 #### NOVEMBER 2020 ⏩ MARCH 2024
