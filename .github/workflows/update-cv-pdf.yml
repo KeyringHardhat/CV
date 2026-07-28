@@ -1,0 +1,29 @@
+name: Update CV PDF
+
+on:
+  push:
+    branches: [gh-pages]
+    paths:
+      - '_data/cv.json'
+      - 'scripts/build_pdf.py'
+      - '.github/workflows/update-cv-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install reportlab pypdf
+      - run: python scripts/build_pdf.py
+      - name: Commit updated PDF
+        run: |
+          git add assets/Kieron-Harding-CV.pdf
+          git diff --cached --quiet || git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: update CV PDF'
+          git push

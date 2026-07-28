@@ -1,0 +1,29 @@
+{
+  "name": "Kieron Harding",
+  "title": "Lead Platform Engineer",
+  "location": "United Kingdom",
+  "updated": "July 2026",
+  "summary": "Platform engineer focused on making cloud infrastructure secure, resilient, efficient and a pleasure for teams to operate.",
+  "focus": ["Platform strategy", "Cloud efficiency", "Secure automation", "Team enablement"],
+  "contact": {"email": "me@kieron.xyz", "linkedin": "https://www.linkedin.com/in/kieron-harding-32bb23109/"},
+  "roles": [
+    {"title": "Lead Platform Engineer", "company": "Team Matrix", "period": "Jul 2026 — Present", "achievements": [{"label": "Platform leadership", "detail": "Primary infrastructure contact across business-critical services, setting technical direction and providing operational support."}, {"label": "Cost optimisation", "detail": "Leading cloud and platform cost-reduction work while protecting performance, resilience and scalability."}, {"label": "Simpler foundations", "detail": "Partnering with development teams to bring services in-house and improve long-term maintainability."}, {"label": "Security assurance", "detail": "Supporting audits, penetration tests and remediation activity from an infrastructure perspective."}]},
+    {"title": "Senior Cloud Engineer", "company": "VFX Financial PLC", "period": "Jun 2025 — Jul 2026", "achievements": [{"label": "Modernised delivery", "detail": "Improved CI/CD reliability, consistency and delivery speed across platform services."}, {"label": "Migrated infrastructure as code", "detail": "Moved automation from PowerShell to Terraform for repeatable, scalable provisioning."}, {"label": "Reduced cloud costs", "detail": "Identified and delivered savings without compromising performance, resilience or security."}]},
+    {"title": "Senior DevOps Engineer", "company": "Matrix Security Watchdog", "period": "Mar 2024 — Jun 2025", "achievements": [{"label": "Designed the core platform", "detail": "Led implementation and cost optimisation with high availability and security by design."}, {"label": "Improved automation and security", "detail": "Strengthened IaC, cloud management, posture and GitLab processes for scalable delivery."}, {"label": "Enabled teams", "detail": "Mentored junior engineers and worked with architects and stakeholders on CI/CD improvement."}]},
+    {"title": "DevOps Engineer", "company": "Matrix Security Watchdog", "period": "Nov 2020 — Mar 2024", "achievements": [{"label": "Built resilient infrastructure", "detail": "Used Terraform, Kubernetes, Azure and GitLab to deliver a highly available 24/7/365 service."}, {"label": "Accelerated releases", "detail": "Reduced production deployment times by 65% through CI/CD optimisation."}, {"label": "Reduced vulnerability windows", "detail": "Automated patching to cut vulnerability lifetime windows by 90%."}]},
+    {"title": "Digital Solutions Consultant", "company": "Security Watchdog", "period": "Feb 2019 — Nov 2020", "achievements": [{"label": "Introduced Azure Sentinel", "detail": "Implemented Azure Sentinel in preview, improving visibility across the estate."}, {"label": "Delivered critical change", "detail": "Managed a telephony migration and partnered with Microsoft on business-critical issues."}, {"label": "Supported compliance", "detail": "Helped information-security teams enforce policy and compliance."}]}
+  ],
+  "projects": [
+    {"name": "Core platform evolution", "description": "A stronger platform foundation that helps teams ship securely and quickly.", "outcomes": ["Terraform-led infrastructure improvement", "Faster production iteration", "Continuous performance and cost tuning"]},
+    {"name": "Cloud cost optimisation", "description": "Right-sizing cloud resources without trading away reliability.", "outcomes": ["30% cloud-spend reduction", "Data-led cluster autoscaling", "Kubernetes workload migration"]},
+    {"name": "Security & compliance overhaul", "description": "Automation that makes a secure default easier to maintain.", "outcomes": ["Automated Terraform patching", "Shorter time-to-market", "Improved infrastructure posture"]}
+  ],
+  "skills": [
+    {"name": "Cloud & platform", "detail": "Azure, Kubernetes, Helm and Linux infrastructure."},
+    {"name": "Automation", "detail": "Terraform, Python, Bash and infrastructure as code."},
+    {"name": "Delivery", "detail": "GitLab, CI/CD pipelines and pragmatic developer enablement."},
+    {"name": "Observability", "detail": "Prometheus, Grafana and Elastic Stack."},
+    {"name": "Security", "detail": "Azure Sentinel, DevSecOps, assurance and compliance."},
+    {"name": "Data", "detail": "SQL querying, optimisation and database change."}
+  ]
+}
