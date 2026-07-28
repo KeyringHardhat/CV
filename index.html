@@ -13,6 +13,7 @@ title: Kieron Harding | Lead Platform Engineer
       <div class="hero__actions">
         <a class="button button--primary" href="{{ '/assets/Kieron-Harding-CV.pdf' | relative_url }}">Download CV <span aria-hidden="true">↓</span></a>
         <a class="button button--quiet" href="{{ site.data.cv.contact.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span> Dark mode</button>
       </div>
     </div>
     <aside class="hero__aside" aria-label="Core strengths">
@@ -57,3 +58,23 @@ title: Kieron Harding | Lead Platform Engineer
     <p class="contact__meta">{{ site.data.cv.name }} · {{ site.data.cv.location }} · Updated {{ site.data.cv.updated }}</p>
   </footer>
 </main>
+<script>
+  (() => {
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+    const saved = localStorage.getItem('cv-theme');
+    if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) root.dataset.theme = 'dark';
+    const sync = () => {
+      const dark = root.dataset.theme === 'dark';
+      toggle.setAttribute('aria-pressed', dark);
+      toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      toggle.innerHTML = dark ? '<span aria-hidden="true">☼</span> Light mode' : '<span aria-hidden="true">◐</span> Dark mode';
+    };
+    sync();
+    toggle.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('cv-theme', root.dataset.theme);
+      sync();
+    });
+  })();
+</script>
