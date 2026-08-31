@@ -79,7 +79,7 @@ def main():
       <div class="header-tools"><span class="host-location">{text(cv["location"])}</span><button class="effects-toggle" type="button" aria-pressed="true" hidden>effects: on</button></div>
     </header>
     <div class="terminal">
-    <div class="terminal-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><p>kieron — platform engineering</p></div>
+    <div class="terminal-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><p>kieron - platform engineering</p></div>
     <nav class="terminal-nav" aria-label="Primary navigation"><a href="#experience">experience</a><a href="#impact">impact</a><a href="#skills">skills</a><a href="#contact">contact</a><a class="nav-download" href="assets/Kieron-Harding-CV.pdf" aria-label="Download CV PDF">cv.pdf ↓</a></nav>
     <div class="terminal-body">
     <main id="main" tabindex="-1">
