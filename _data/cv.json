@@ -5,6 +5,11 @@
   "updated": "July 2026",
   "summary": "Platform engineer focused on making cloud infrastructure secure, resilient, efficient and a pleasure for teams to operate.",
   "focus": ["Platform strategy", "Cloud efficiency", "Secure automation", "Team enablement"],
+  "highlights": [
+    {"metric": "65%", "label": "faster production deployments"},
+    {"metric": "90%", "label": "shorter vulnerability windows"},
+    {"metric": "30%", "label": "cloud-spend reduction"}
+  ],
   "contact": {"email": "me@kieron.xyz", "linkedin": "https://www.linkedin.com/in/kieron-harding-32bb23109/"},
   "roles": [
     {"title": "Lead Platform Engineer", "company": "Team Matrix", "period": "Jul 2026 — Present", "achievements": [{"label": "Platform leadership", "detail": "Primary infrastructure contact across business-critical services, setting technical direction and providing operational support."}, {"label": "Cost optimisation", "detail": "Leading cloud and platform cost-reduction work while protecting performance, resilience and scalability."}, {"label": "Simpler foundations", "detail": "Partnering with development teams to bring services in-house and improve long-term maintainability."}, {"label": "Security assurance", "detail": "Supporting audits, penetration tests and remediation activity from an infrastructure perspective."}]},

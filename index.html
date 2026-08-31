@@ -1,80 +1,112 @@
----
-layout: default
-title: Kieron Harding | Lead Platform Engineer
----
-
-<main class="cv-shell">
-  <header class="hero" id="top">
-    <div class="hero__content">
-      <p class="eyebrow">{{ site.data.cv.location }}</p>
-      <h1>{{ site.data.cv.name }}</h1>
-      <p class="hero__title">{{ site.data.cv.title }}</p>
-      <p class="hero__summary">{{ site.data.cv.summary }}</p>
-      <div class="hero__actions">
-        <a class="button button--primary" href="{{ '/assets/Kieron-Harding-CV.pdf' | relative_url }}">Download CV <span aria-hidden="true">↓</span></a>
-        <a class="button button--quiet" href="{{ site.data.cv.contact.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span> Dark mode</button>
-      </div>
-    </div>
-    <aside class="hero__aside" aria-label="Core strengths">
-      <p class="hero__aside-label">Platform focus</p>
-      <ul>
-        {% for focus in site.data.cv.focus %}<li>{{ focus }}</li>{% endfor %}
-      </ul>
-    </aside>
-  </header>
-
-  <section class="section experience" id="experience">
-    <div class="section-heading"><p class="eyebrow">Experience</p><h2>Building strong, capable platforms.</h2></div>
-    <div class="timeline">
-      {% for role in site.data.cv.roles %}
-      <article class="role{% if forloop.first %} role--current{% endif %}">
-        <div class="role__period">{{ role.period }}</div>
-        <div class="role__body">
-          <div class="role__title"><h3>{{ role.title }}</h3><p>{{ role.company }}</p></div>
-          <ul>{% for achievement in role.achievements %}<li><strong>{{ achievement.label }}.</strong> {{ achievement.detail }}</li>{% endfor %}</ul>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Platform engineer focused on making cloud infrastructure secure, resilient, efficient and a pleasure for teams to operate.">
+  <meta name="theme-color" content="#101113">
+  <link rel="canonical" href="https://cv.kieron.xyz/">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Kieron Harding | Lead Platform Engineer</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Kieron Harding, top of page">~/kieron-harding<span aria-hidden="true"> $</span></a>
+      <div class="header-tools"><span class="host-location">United Kingdom</span><button class="effects-toggle" type="button" aria-pressed="true" hidden>effects: on</button></div>
+    </header>
+    <div class="terminal">
+    <div class="terminal-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><p>kieron — platform engineering</p></div>
+    <nav class="terminal-nav" aria-label="Primary navigation"><a href="#experience">experience</a><a href="#impact">impact</a><a href="#skills">skills</a><a href="#contact">contact</a><a class="nav-download" href="assets/Kieron-Harding-CV.pdf" aria-label="Download CV PDF">cv.pdf ↓</a></nav>
+    <div class="terminal-body">
+    <main id="main" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="intro-heading">
+        <div class="boot-sequence">
+          <button class="boot-replay" type="button" hidden>replay intro ↻</button>
+          <div class="boot-log" aria-hidden="true">
+            <p class="boot-launch"><span>$</span> <span class="boot-command">./cv --init</span></p>
+            <p class="boot-step"><span>[ok]</span> profile.json loaded</p>
+            <p class="boot-step"><span>[ok]</span> 5 experience entries indexed</p>
+            <div class="boot-meter"><span class="boot-track"><span class="boot-fill"></span></span><span class="boot-complete">ready.</span></div>
+          </div>
         </div>
-      </article>
-      {% endfor %}
+        <p class="prompt" aria-hidden="true"><span class="host">kieron@platform</span><span class="path">~</span><span class="symbol">$</span><span class="typed-command">whoami</span><span class="cursor"></span></p>
+        <div class="intro-grid">
+        <div class="hero__content">
+          <h1 id="intro-heading">Kieron Harding</h1>
+          <p class="hero__title">Lead Platform Engineer</p>
+          <p class="hero__summary">Platform engineer focused on making cloud infrastructure secure, resilient, efficient and a pleasure for teams to operate.</p>
+          <div class="hero__actions"><a class="button button--primary" href="assets/Kieron-Harding-CV.pdf">Download CV <span aria-hidden="true">↓</span></a><a class="button" href="https://www.linkedin.com/in/kieron-harding-32bb23109/" rel="me">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <aside class="hero__aside" aria-label="Core strengths"><p class="comment"># platform_focus</p><ul><li>Platform strategy</li><li>Cloud efficiency</li><li>Secure automation</li><li>Team enablement</li></ul></aside>
+        </div>
+      </section>
+      <section class="section" id="experience" aria-labelledby="experience-heading"><div class="section-heading"><p class="prompt" aria-hidden="true"><span class="symbol">$</span> cat experience.log --latest-first</p><h2 id="experience-heading"># experience · 5 entries · newest first</h2></div><div class="timeline"><article class="role">
+  <p class="role__period"><span class="record-label">entry_01</span>Jul 2026 — Present</p>
+  <div class="role__content">
+    <div class="role__heading"><h3>Lead Platform Engineer <span class="status">Current</span></h3><p>Team Matrix</p></div>
+    <ul><li><strong>platform_leadership:</strong> Primary infrastructure contact across business-critical services, setting technical direction and providing operational support.</li><li><strong>cost_optimisation:</strong> Leading cloud and platform cost-reduction work while protecting performance, resilience and scalability.</li><li><strong>simpler_foundations:</strong> Partnering with development teams to bring services in-house and improve long-term maintainability.</li><li><strong>security_assurance:</strong> Supporting audits, penetration tests and remediation activity from an infrastructure perspective.</li></ul>
+  </div>
+</article>
+<article class="role">
+  <p class="role__period"><span class="record-label">entry_02</span>Jun 2025 — Jul 2026</p>
+  <div class="role__content">
+    <div class="role__heading"><h3>Senior Cloud Engineer </h3><p>VFX Financial PLC</p></div>
+    <ul><li><strong>modernised_delivery:</strong> Improved CI/CD reliability, consistency and delivery speed across platform services.</li><li><strong>migrated_infrastructure_as_code:</strong> Moved automation from PowerShell to Terraform for repeatable, scalable provisioning.</li><li><strong>reduced_cloud_costs:</strong> Identified and delivered savings without compromising performance, resilience or security.</li></ul>
+  </div>
+</article>
+<article class="role">
+  <p class="role__period"><span class="record-label">entry_03</span>Mar 2024 — Jun 2025</p>
+  <div class="role__content">
+    <div class="role__heading"><h3>Senior DevOps Engineer </h3><p>Matrix Security Watchdog</p></div>
+    <ul><li><strong>designed_the_core_platform:</strong> Led implementation and cost optimisation with high availability and security by design.</li><li><strong>improved_automation_and_security:</strong> Strengthened IaC, cloud management, posture and GitLab processes for scalable delivery.</li><li><strong>enabled_teams:</strong> Mentored junior engineers and worked with architects and stakeholders on CI/CD improvement.</li></ul>
+  </div>
+</article>
+<article class="role">
+  <p class="role__period"><span class="record-label">entry_04</span>Nov 2020 — Mar 2024</p>
+  <div class="role__content">
+    <div class="role__heading"><h3>DevOps Engineer </h3><p>Matrix Security Watchdog</p></div>
+    <ul><li><strong>built_resilient_infrastructure:</strong> Used Terraform, Kubernetes, Azure and GitLab to deliver a highly available 24/7/365 service.</li><li><strong>accelerated_releases:</strong> Reduced production deployment times by 65% through CI/CD optimisation.</li><li><strong>reduced_vulnerability_windows:</strong> Automated patching to cut vulnerability lifetime windows by 90%.</li></ul>
+  </div>
+</article>
+<article class="role">
+  <p class="role__period"><span class="record-label">entry_05</span>Feb 2019 — Nov 2020</p>
+  <div class="role__content">
+    <div class="role__heading"><h3>Digital Solutions Consultant </h3><p>Security Watchdog</p></div>
+    <ul><li><strong>introduced_azure_sentinel:</strong> Implemented Azure Sentinel in preview, improving visibility across the estate.</li><li><strong>delivered_critical_change:</strong> Managed a telephony migration and partnered with Microsoft on business-critical issues.</li><li><strong>supported_compliance:</strong> Helped information-security teams enforce policy and compliance.</li></ul>
+  </div>
+</article></div></section>
+      <section class="section" id="impact" aria-labelledby="impact-heading"><div class="section-heading"><p class="prompt" aria-hidden="true"><span class="symbol">$</span> ls ./impact --details</p><h2 id="impact-heading"># selected impact · 3 results</h2></div><div class="project-grid"><article class="project-card">
+  <p class="project-card__number">01</p>
+  <h3>Core platform evolution</h3>
+  <p>A stronger platform foundation that helps teams ship securely and quickly.</p>
+  <ul><li>Terraform-led infrastructure improvement</li><li>Faster production iteration</li><li>Continuous performance and cost tuning</li></ul>
+</article>
+<article class="project-card">
+  <p class="project-card__number">02</p>
+  <h3>Cloud cost optimisation</h3>
+  <p>Right-sizing cloud resources without trading away reliability.</p>
+  <ul><li>30% cloud-spend reduction</li><li>Data-led cluster autoscaling</li><li>Kubernetes workload migration</li></ul>
+</article>
+<article class="project-card">
+  <p class="project-card__number">03</p>
+  <h3>Security &amp; compliance overhaul</h3>
+  <p>Automation that makes a secure default easier to maintain.</p>
+  <ul><li>Automated Terraform patching</li><li>Shorter time-to-market</li><li>Improved infrastructure posture</li></ul>
+</article></div></section>
+      <section class="section" id="skills" aria-labelledby="skills-heading"><div class="section-heading"><p class="prompt" aria-hidden="true"><span class="symbol">$</span> cat capabilities.yml</p><h2 id="skills-heading"># capabilities · 6 groups</h2></div><div class="skill-grid"><article><h3>cloud_platform:</h3><p>Azure, Kubernetes, Helm and Linux infrastructure.</p></article>
+<article><h3>automation:</h3><p>Terraform, Python, Bash and infrastructure as code.</p></article>
+<article><h3>delivery:</h3><p>GitLab, CI/CD pipelines and pragmatic developer enablement.</p></article>
+<article><h3>observability:</h3><p>Prometheus, Grafana and Elastic Stack.</p></article>
+<article><h3>security:</h3><p>Azure Sentinel, DevSecOps, assurance and compliance.</p></article>
+<article><h3>data:</h3><p>SQL querying, optimisation and database change.</p></article></div></section>
+    </main>
+    <footer class="contact" id="contact" aria-label="Contact"><p class="prompt" aria-hidden="true"><span class="symbol">$</span> ./connect</p><p class="comment"># open a conversation</p><div class="contact-links"><a href="mailto:me@kieron.xyz">me@kieron.xyz</a><a href="https://www.linkedin.com/in/kieron-harding-32bb23109/">LinkedIn ↗</a></div></footer>
     </div>
-  </section>
-
-  <section class="section projects" id="projects">
-    <div class="section-heading"><p class="eyebrow">Selected impact</p><h2>Work that makes a measurable difference.</h2></div>
-    <div class="project-grid">
-      {% for project in site.data.cv.projects %}
-      <article class="project-card"><p class="project-card__number">0{{ forloop.index }}</p><h3>{{ project.name }}</h3><p>{{ project.description }}</p><ul>{% for outcome in project.outcomes %}<li>{{ outcome }}</li>{% endfor %}</ul></article>
-      {% endfor %}
     </div>
-  </section>
-
-  <section class="section skills" id="skills">
-    <div class="section-heading"><p class="eyebrow">Capabilities</p><h2>The tools behind the outcomes.</h2></div>
-    <div class="skill-grid">{% for skill in site.data.cv.skills %}<article><h3>{{ skill.name }}</h3><p>{{ skill.detail }}</p></article>{% endfor %}</div>
-  </section>
-
-  <footer class="contact" id="contact">
-    <p class="eyebrow">Let's connect.</p><a href="mailto:{{ site.data.cv.contact.email }}">{{ site.data.cv.contact.email }}</a>
-    <p class="contact__meta">{{ site.data.cv.name }} · {{ site.data.cv.location }} · Updated {{ site.data.cv.updated }}</p>
-  </footer>
-</main>
-<script>
-  (() => {
-    const root = document.documentElement;
-    const toggle = document.querySelector('.theme-toggle');
-    const saved = localStorage.getItem('cv-theme');
-    if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) root.dataset.theme = 'dark';
-    const sync = () => {
-      const dark = root.dataset.theme === 'dark';
-      toggle.setAttribute('aria-pressed', dark);
-      toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-      toggle.innerHTML = dark ? '<span aria-hidden="true">☼</span> Light mode' : '<span aria-hidden="true">◐</span> Dark mode';
-    };
-    sync();
-    toggle.addEventListener('click', () => {
-      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('cv-theme', root.dataset.theme);
-      sync();
-    });
-  })();
-</script>
+    <div class="site-footer"><p>Kieron Harding / Lead Platform Engineer</p><p>Last updated: July 2026</p></div>
+  </div>
+  <script src="assets/js/terminal.js" defer></script>
+</body>
+</html>

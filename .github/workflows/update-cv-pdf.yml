@@ -6,6 +6,7 @@ on:
     paths:
       - '_data/cv.json'
       - 'scripts/build_pdf.py'
+      - 'scripts/build_site.py'
       - '.github/workflows/update-cv-pdf.yml'
   workflow_dispatch:
 
@@ -22,8 +23,9 @@ jobs:
           python-version: '3.12'
       - run: pip install reportlab pypdf
       - run: python scripts/build_pdf.py
-      - name: Commit updated PDF
+      - run: python scripts/build_site.py
+      - name: Commit updated CV assets
         run: |
-          git add assets/Kieron-Harding-CV.pdf
+          git add assets/Kieron-Harding-CV.pdf index.html
           git diff --cached --quiet || git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: update CV PDF'
           git push

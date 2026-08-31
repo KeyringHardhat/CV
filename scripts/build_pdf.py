@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create the downloadable CV from the data used by the Jekyll site."""
+"""Create the downloadable CV from the data used by the static site."""
 import json
 from pathlib import Path
 
