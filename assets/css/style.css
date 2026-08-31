@@ -107,7 +107,7 @@ h3 { font-size: 14px; font-weight: 600; line-height: 1.6; }
 @keyframes boot-line { from { opacity: 0; transform: translateX(-5px); } to { opacity: 1; transform: translateX(0); } }
 @keyframes boot-progress { from { width: 0; } to { width: 100%; } }
 @keyframes boot-ready { from { opacity: 0; } to { opacity: 1; } }
-@keyframes profile-output { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes profile-output { from { opacity: 0; visibility: hidden; transform: translateY(5px); } to { opacity: 1; visibility: visible; transform: translateY(0); } }
 @media (prefers-reduced-motion: no-preference) {
   :root:not([data-effects="off"]) .cursor { animation: cursor-blink 1.2s step-end infinite; }
   :root:not([data-effects="off"]) .boot-command { animation: type-launch calc(.45s / var(--boot-speed)) steps(11, end) backwards; }
@@ -118,7 +118,9 @@ h3 { font-size: 14px; font-weight: 600; line-height: 1.6; }
   :root:not([data-effects="off"]) .hero > .prompt { animation: boot-ready .01s calc(1.2s / var(--boot-speed)) backwards; }
   :root:not([data-effects="off"]) .typed-command { animation: type-command .4s steps(6, end) calc(1.2s / var(--boot-speed)) backwards; }
   :root:not([data-effects="off"]) .intro-grid { animation: profile-output .25s ease-out calc(1.2s / var(--boot-speed) + .4s) backwards; }
-  .intro-grid:focus-within { animation: none !important; }
+  /* The remaining output follows the completed profile reveal. */
+  :root:not([data-effects="off"]) :is(.section, .contact, .site-footer) { animation: profile-output .2s ease-out calc(1.2s / var(--boot-speed) + .65s) backwards; }
+  :is(.intro-grid, .section, .contact):focus-within { animation: none !important; }
 }
 @media (max-width: 800px) {
   .terminal-body { padding: 28px; }
@@ -148,7 +150,7 @@ h3 { font-size: 14px; font-weight: 600; line-height: 1.6; }
   .site-shell { max-width: none; padding: 0; }.terminal { border: 0; }.terminal-body { padding: 0; }
   .site-header, .terminal-bar, .terminal-nav, .hero__actions, .skip-link, .session-end { display: none; }
   .boot-sequence, .cursor { display: none; }
-  .typed-command, .intro-grid, .hero > .prompt { animation: none !important; }
+  .typed-command, .intro-grid, .hero > .prompt, .section, .contact, .site-footer { animation: none !important; }
   .hero__summary, .role li, .project-card li { color: #444; }
   .role, .project-card, .skill-grid article { break-inside: avoid; }
 }
