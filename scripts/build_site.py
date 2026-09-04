@@ -2,6 +2,7 @@
 """Build the lightweight static CV website from the shared CV data."""
 import html
 import json
+from hashlib import sha256
 from pathlib import Path
 
 
@@ -57,6 +58,10 @@ def skills(items):
 
 def main():
     cv = json.loads(DATA.read_text())
+    # Change the download URL only when the PDF bytes change, avoiding stale caches.
+    pdf_path = "assets/Kieron-Harding-CV.pdf"
+    pdf_version = sha256((ROOT / pdf_path).read_bytes()).hexdigest()[:16]
+    pdf_url = f"{pdf_path}?v={pdf_version}"
     name, title = text(cv["name"]), text(cv["title"])
     email, linkedin = text(cv["contact"]["email"]), text(cv["contact"]["linkedin"])
     focus = "".join(f"<li>{text(item)}</li>" for item in cv["focus"])
@@ -80,7 +85,7 @@ def main():
     </header>
     <div class="terminal">
     <div class="terminal-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><p>kieron - platform engineering</p></div>
-    <nav class="terminal-nav" aria-label="Primary navigation"><a href="#experience">experience</a><a href="#impact">impact</a><a href="#skills">skills</a><a href="#contact">contact</a><a class="nav-download" href="assets/Kieron-Harding-CV.pdf" aria-label="Download CV PDF">cv.pdf ↓</a></nav>
+    <nav class="terminal-nav" aria-label="Primary navigation"><a href="#experience">experience</a><a href="#impact">impact</a><a href="#skills">skills</a><a href="#contact">contact</a><a class="nav-download" href="{pdf_url}" aria-label="Download CV PDF">cv.pdf ↓</a></nav>
     <div class="terminal-body">
     <main id="main" tabindex="-1">
       <section class="hero" id="top" aria-labelledby="intro-heading">
@@ -99,7 +104,7 @@ def main():
           <h1 id="intro-heading">{name}</h1>
           <p class="hero__title">{title}</p>
           <p class="hero__summary">{text(cv["summary"])}</p>
-          <div class="hero__actions"><a class="button button--primary" href="assets/Kieron-Harding-CV.pdf">Download CV <span aria-hidden="true">↓</span></a><a class="button" href="{linkedin}" rel="me">LinkedIn <span aria-hidden="true">↗</span></a></div>
+          <div class="hero__actions"><a class="button button--primary" href="{pdf_url}">Download CV <span aria-hidden="true">↓</span></a><a class="button" href="{linkedin}" rel="me">LinkedIn <span aria-hidden="true">↗</span></a></div>
         </div>
         <aside class="hero__aside" aria-label="Core strengths"><p class="comment"># platform_focus</p><ul>{focus}</ul></aside>
         </div>

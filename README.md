@@ -27,3 +27,5 @@ python3 scripts/build_site.py
 ```
 
 The generated PDF is intentionally constrained to one A4 page; the build fails if a content update would overflow it. The GitHub Actions workflow regenerates and commits the matching page and PDF whenever the CV data is pushed to `gh-pages`.
+
+Generate the PDF before the website: both download links include a version derived from the PDF contents, so updated downloads use a fresh browser/CDN cache entry. The PDF filename stays the same.
